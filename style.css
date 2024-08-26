@@ -1,0 +1,203 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Fjalla One", sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .navbar {
+            width: 80%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 130px;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .navbar ul li::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: black;
+            transition: width 0.3s;
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .originals, .performanse, .sportswear, .ropa, .originalsshoes, .performanseshoes {
+            height: 400px;
+            width: 300px;
+            margin: auto;
+            view-timeline-name: --image;
+            view-timeline-axis: block;
+            animation-timeline: --image;
+            animation-name: show;
+            animation-range: entry 25% cover 50%;
+        }
+
+        .navbar{ width: 80%; Margin: auto; padding:35px 0; display:flex; align-items:center; justify-content:space-between;
+
+        } .logo{ width:130px; cursor:pointer; } .navbar ul li{ list-style:none; display:irlire-block; margin:0 20px; position:relative; }
+        
+        .navbar ul{ display:flex; }
+        
+        .navbar ul li a{ text-decoration:none; color:black;
+        
+         
+        font-size:1.2rem;
+        }
+        
+        .navbar ul li::before{ content:""; height:3px; width:0; background:black; position:absolute; left:0; bottom:-12px; transition:0.4s ease-out; }
+        
+        .navbar ul li:hover::before{ width:100%; } .originals{ height:400px; width:350px; margin:auto; view-timeline-name:--image; view-timeline-axis:block;
+        
+         
+        animation-timeline:--image;
+        animation-name:show;
+        animation-range:entry 25% cover 50%;
+        } .performanse{ height:400px; width:300px; margin:auto; view-timeline-name:--image; view-timeline-axis:block;
+        
+         
+        animation-timeline:--image;
+        animation-name:show;
+        animation-range:entry 25% cover 50%;
+        }
+        
+        .sportswear{ height:400px; width:300px; margin:auto; view-timeline-name:--image; view-timeline-axis:block;
+        
+         
+        animation-timeline:--image;
+        animation-name:show;
+        animation-range:entry 25% cover 50%;
+        } .logos{ margin:auto; display:flex; justify-content:space-around; } .shoes{ margin:auto; display:flex; justify-content:space-around; } .ropa{ height:400px; width:300px; margin:auto; view-timeline-name:--image; view-timeline-axis:block;
+        
+         
+        animation-timeline:--image;
+        animation-name:show; 
+        animation-range:entry 25% cover 50%; } .originalsshoes{ height:400px; width:350px; margin:auto;
+        view-timeline-name:--image; view-timeline-axis:block;
+        
+         
+        animation-timeline:--image;
+        animation-name:show;
+        animation-range:entry 25% cover 50%;
+        } .performanseshoes{ height:400px; width:300px; margin:auto;
+        
+         
+           view-timeline-name:--image;
+        view-timeline-axis:block;
+        
+        animation-timeline:--image;
+        animation-name:show;
+        animation-range:entry 25% cover 50%;
+        }
+        @keyframes show {
+            from {
+                opacity: 0;
+                scale: 25%;
+            }
+            to {
+                opacity: 1;
+                scale: 100%;
+            }
+        }
+
+        .Shop, .History, .contact {
+            background-color: black;
+            height: 100px;
+        }
+
+        .A, .B, .C {
+            color: black;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .logos, .shoes {
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .logos img, .shoes img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+
+        .P {
+            max-width: 300px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .H {
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        #Contact {
+            text-align: center; 
+        }
+
+        .RS {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            gap: 10px; 
+            margin-top: 20px; 
+        }
+
+        .RS img {
+            width: 50px; 
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: black;
+            color: white;
+            position: relative;
+        }
